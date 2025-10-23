@@ -1,8 +1,16 @@
 import { Box, Button, Card, Flex, Heading, HStack, Image, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import Description from '@/components/Description'
+import { useNavigate } from 'react-router-dom'
 
 const HomePage = () => {
+
+    const navigate = useNavigate();
+
+    const handleButtonClick = () => {
+        navigate('/about');
+    };
+
   return (
     <Flex minH = '100vh' align = 'center' justify = 'center' bgColor = {'#f4ebe2'}>
         <VStack flexDir = {'column'} w= '100%' align = 'stretch' spacing = {{base: 8, md: 16}}>
@@ -12,7 +20,7 @@ const HomePage = () => {
                 <Box  
                     bg = '#5c92ac' 
                     pt = {{base: '60px', md: '90px'}}
-                    pb = {{base: '120px', md: '198px'}} 
+                    pb = {{base: '120px', md: '150px'}} 
                     px = {{base: '16px', md: '32px'}}
                 >
                     <VStack>
@@ -41,6 +49,8 @@ const HomePage = () => {
                 wrap = 'wrap'
                 justify = {{base: 'center', md: 'space-between'}}
                 align = 'flex-start'
+                paddingRight = '20px'
+                paddingLeft = '20px'
             >
                 {/*Pricing Card*/}
                 <Box 
@@ -63,12 +73,20 @@ const HomePage = () => {
                     <Card.Body gap = '2'>
                         <Card.Title color = 'black'>Janet Carbajal</Card.Title>
                         <Card.Description color = 'black'>
-                            Meet Coach Janet, the ultimate fun-maker on the field! With her enfless energy and big smile, Coach Janet helps young athletes discover just how exciting being active can be. 
+                            Meet Coach Janet, the ultimate fun-maker on the field! With her endless energy and big smile, Coach Janet helps young athletes discover just how exciting being active can be. 
                             Whether it's trying something new for the first time or if you have some experience already, she makes every activity feel like an adventure.
                         </Card.Description>
                     </Card.Body>
                     <Card.Footer gapt = '2'>
-                        <Button variant = 'ghost'>About Me</Button>
+                        <Button 
+                            bg  = '#5c92ac' 
+                            color = '#f4ebe2' 
+                            _hover ={{bg: '	#335584'}} 
+                            shadow={'sm'}
+                            onClick={handleButtonClick}
+                        >
+                            About Me
+                        </Button>
                     </Card.Footer>
                 </Card.Root>
 
