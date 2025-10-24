@@ -149,6 +149,25 @@ const AboutPage = () => {
                 </Box>
             </Flex>
 
+            {/*Contact */}
+                        <Box 
+                            bg = {pink} 
+                            display = 'flex' 
+                            justifyContent={'center'} 
+                            p = '10px'
+                        >
+                            <Flex>
+                                <VStack>
+                                    <Heading color = 'black'>Contact</Heading>
+                                    <HStack>
+                                        <Text pb = '20px' color = 'black'>Email: Fitness2143@gmail.com</Text>
+                                        <Text></Text>
+                                    </HStack>
+            
+                                </VStack>
+                            </Flex>
+                        </Box>
+
         </VStack>
 
     </Flex>
