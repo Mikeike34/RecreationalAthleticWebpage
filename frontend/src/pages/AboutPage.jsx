@@ -62,7 +62,7 @@ const AboutPage = () => {
                     order = {{base: 1, lg: 1}}
                 >
                 <Image 
-                    src = '..\images\class.jpg'
+                    src = '\Class.jpg'
                     boxSize = {{base: '350px', lg: '500px'}}
                 />
                 </Box>
@@ -75,7 +75,7 @@ const AboutPage = () => {
                     order = {{base: '3', xl: '2'}}
                 >
                     <Image 
-                        src = '..\images\running.jpg'
+                        src = '\running.jpg'
                         boxSize = {{base: '350px', lg: '500px'}}
                     />
 

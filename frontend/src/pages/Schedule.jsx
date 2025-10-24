@@ -60,7 +60,7 @@ const Schedule = () => {
                         w = '100%'
                     >
                         <Image 
-                            src = '..\images\pickleball.jpg'
+                            src = '\pickleball.jpg'
                             boxSize = {{base: '250px', sm: '300px', md: '400px', lg: '450px'}}
                             borderRadius = '12px'
                             objectFit = 'cover'

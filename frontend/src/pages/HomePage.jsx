@@ -81,7 +81,7 @@ const HomePage = () => {
                         </VStack>
 
                         <Image 
-                            src = '..\images\headerPhoto.jpg'
+                            src = '\headerPhoto.jpg'
                             boxSize = {{base: '220px', sm: '260px', md: '400px'}}
                             borderRadius = 'full'
                             objectFit = 'cover'
@@ -150,9 +150,9 @@ const HomePage = () => {
                     maxW = '600px' 
                     py = {{base: '20px', md: '40px'}} 
                 >
-                    <Image src = '..\images\Soccerball.png' boxSize = {{base: '75px', md: '105px'}} />
-                    <Image src = '..\images\Basketball.png' boxSize = {{base: '60px', md: '90px'}} />
-                    <Image src = '..\images\Baseball.png' boxSize = {{base: '60px', md: '90px'}} />
+                    <Image src = '\Soccerball.png' boxSize = {{base: '75px', md: '105px'}} />
+                    <Image src = '\Basketball.png' boxSize = {{base: '60px', md: '90px'}} />
+                    <Image src = '\Baseball.png' boxSize = {{base: '60px', md: '90px'}} />
                 </HStack>   
             </Flex>
 
@@ -179,7 +179,7 @@ const HomePage = () => {
                         flexShrink={0}
                     >
                         <Image 
-                            src = '..\images\Janet.jpg'
+                            src = '\Janet.jpg'
                             w = {{ base: '200px', sm: '250px', md: '400px'}}
                             h = {{base: '200px',sm: '250px', md: '400px'}}
                             objectFit = 'cover'
@@ -232,7 +232,7 @@ const HomePage = () => {
                 <Image 
                     objectFit = 'contain' 
                     w = {{base: '90%', md: '70%', lg: '50%'}} 
-                    src = '..\images\kidsplayingsports.png' 
+                    src = '\kidsplayingsports.png' 
                 />
             </Box>
 

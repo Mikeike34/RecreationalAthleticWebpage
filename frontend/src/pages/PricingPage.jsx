@@ -78,7 +78,7 @@ const PricingPage = () => {
                 alignItems= 'center'
                 justifyContent = 'center'
             >
-                <Image objectFit = 'contain' w = {{base: '90%', md: '60%'}} h = 'auto'  src = '..\images\kidsplayingsports.png' />
+                <Image objectFit = 'contain' w = {{base: '90%', md: '60%'}} h = 'auto'  src = '\kidsplayingsports.png' />
             </Box>
             
             {/*Contact */}
