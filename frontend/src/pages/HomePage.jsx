@@ -1,4 +1,4 @@
-import { Box, Button, Card, Flex, Heading, HStack, Image, Text, VStack } from '@chakra-ui/react'
+import { Box, Flex, Heading, HStack, Image, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import Navbar from '@/components/Navbar'
 import { useNavigate } from 'react-router-dom'
@@ -13,9 +13,6 @@ const HomePage = () => {
 
     const navigate = useNavigate();
 
-    const handleButtonClick = () => {
-        navigate('/about');
-    };
 
   return (
     <Flex minH = '100vh' align = 'center' justify = 'center' bgColor = {offWhite} >
