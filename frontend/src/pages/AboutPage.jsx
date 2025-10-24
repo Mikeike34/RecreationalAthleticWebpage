@@ -143,6 +143,8 @@ const AboutPage = () => {
                             My business came together when The City of Murrieta approached me 18 years ago in need 
                             of a Sports Instructor. I accepted the challenge and have been doing it ever since. 
                         </Text>
+                        <Heading color = 'black'>License</Heading>
+                        <Text color = 'black'>Business License Number: 22650 </Text>
                     </VStack>
                 </Box>
             </Flex>
