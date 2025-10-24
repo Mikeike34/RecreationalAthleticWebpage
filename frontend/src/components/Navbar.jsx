@@ -36,7 +36,7 @@ const Navbar = () => {
                     </Text>
                     <Text 
                         color = 'black' 
-                        as = {Link} to = 'about'
+                        as = {Link} to = '/about'
                         _hover = {{ 
                             px: '2px', 
                             fontWeight: 'semibold', 
@@ -48,7 +48,7 @@ const Navbar = () => {
                     </Text>
                     <Text 
                         color = 'black'
-                        as = {Link} to = 'about'
+                        as = {Link} to = '/pricing'
                         _hover = {{ 
                             px: '2px', 
                             fontWeight: 'semibold', 
@@ -60,7 +60,7 @@ const Navbar = () => {
                     </Text>
                     <Text 
                         color = 'black'
-                        as = {Link} to = 'schedule'
+                        as = {Link} to = '/schedule'
                         _hover = {{ 
                             px: '2px', 
                             fontWeight: 'semibold', 
