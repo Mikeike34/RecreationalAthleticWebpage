@@ -257,6 +257,7 @@ const HomePage = () => {
                 </VStack>
             </Box>
         </VStack>
+        {/*M + C*/}
     </Flex>
   )
 }
