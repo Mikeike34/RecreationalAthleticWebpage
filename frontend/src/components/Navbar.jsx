@@ -19,7 +19,7 @@ const Navbar = () => {
                 borderRadius = '12px'
                 px = '50px'
                 py = '3px'
-                minW = '50%'
+                minW = {{base: '50%', md: '75%', lg: '75%', xl: '50%'}}
             >
                 <HStack justify = 'space-between' align = 'center' w = '100%'>
                     <Text 

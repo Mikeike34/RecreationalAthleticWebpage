@@ -11,7 +11,7 @@ const AboutPage = () => {
 
   return (
     <Flex
-        minH = '100vh'
+        minH = '100%'
         align = 'center'
         justify = 'center'
         bg = {offWhite}
@@ -45,60 +45,57 @@ const AboutPage = () => {
 
             {/*About*/}
             <Flex 
-                direction = {{base: 'column', md: 'row'}}
-                gap = '4'
-                justifyContent = 'center'
-                alignItems = 'center'
-                py = '30px'
+                direction = {{base: 'column', xl: 'row'}}
+                gap = {{base: 6, md: 8, lg: 12}}
+                justify = 'center'
+                align = 'center'
+                w = '100%'
+                px = {{base: 4, md: 10, xl: 20}}
+                py = {{base: 8, md: 12, xl: 16}}
             >
-                <Flex 
-                    direction = 'column'
-                    gap = '4'
-                >
-                    <Box
-                        bg = {pink}
-                        px = '10px'
-                        py = '10px'
-                        borderRadius = '12px'
-                        overflow = 'hidden'
-                        order = {{base: '1', md: '1'}}
-                    >
-                    <Image 
-                        src = '..\images\class.jpg'
-                        boxSize = '500px'
-                    />
-                    </Box>
-                    <Box
-                        bg = {orange}
-                        px = '10px'
-                        py = '10px'
-                        borderRadius = '12px'
-                        overflow = 'hidden'
-                        order = {{base: '3', md: '2'}}
-                    >
-                        <Image 
-                            src = '..\images\running.jpg'
-                            boxSize = '500px'
-                        />
-
-                    </Box>
-                </Flex>
-
-                <Box 
-                    bg = {blue}
+                <Box
+                    bg = {pink}
                     px = '10px'
                     py = '10px'
                     borderRadius = '12px'
                     overflow = 'hidden'
-                    maxW = {{base: '95%', md: '40%'}}
-                    order = {{base: '2', md: '3'}}
+                    order = {{base: 1, lg: 1}}
+                >
+                <Image 
+                    src = '..\images\class.jpg'
+                    boxSize = {{base: '350px', lg: '500px'}}
+                />
+                </Box>
+                <Box
+                    bg = {orange}
+                    px = '10px'
+                    py = '10px'
+                    borderRadius = '12px'
+                    overflow = 'hidden'
+                    order = {{base: '3', xl: '2'}}
+                >
+                    <Image 
+                        src = '..\images\running.jpg'
+                        boxSize = {{base: '350px', lg: '500px'}}
+                    />
+
+                </Box>
+
+
+                <Box 
+                    bg = {blue}
+                    p = {{base: 4, md: 6, xl: 8}}
+                    borderRadius = '12px'
+                    flex = {{lg: 2}}
+                    order = {{base: 2, lg: 2}}
+                    textAlign = {{base: 'center', lg: 'left'}}
                 >
                     <VStack
                         pt = '20px'
                         pb = '20px'
                         mx = '15%'
                         display = 'flex'
-                        align = 'flex-start'
+                        align = {{base: 'center', lg: 'flex-start'}}
                     >
                         <Heading color = 'black' >The Community:</Heading>
                         <Text color = 'black'>
@@ -150,23 +147,23 @@ const AboutPage = () => {
             </Flex>
 
             {/*Contact */}
-                        <Box 
-                            bg = {pink} 
-                            display = 'flex' 
-                            justifyContent={'center'} 
-                            p = '10px'
-                        >
-                            <Flex>
-                                <VStack>
-                                    <Heading color = 'black'>Contact</Heading>
-                                    <HStack>
-                                        <Text pb = '20px' color = 'black'>Email: Fitness2143@gmail.com</Text>
-                                        <Text></Text>
-                                    </HStack>
-            
-                                </VStack>
-                            </Flex>
-                        </Box>
+            <Box 
+                bg = {pink} 
+                display = 'flex' 
+                justifyContent={'center'} 
+                p = '10px'
+            >
+                <Flex>
+                    <VStack>
+                        <Heading color = 'black'>Contact</Heading>
+                        <HStack>
+                            <Text pb = '20px' color = 'black'>Email: Fitness2143@gmail.com</Text>
+                            <Text></Text>
+                        </HStack>
+
+                    </VStack>
+                </Flex>
+            </Box>
 
         </VStack>
 
