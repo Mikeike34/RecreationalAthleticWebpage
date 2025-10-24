@@ -121,7 +121,7 @@ const Schedule = () => {
                         >
                             <VStack my = '20px' textAlign = {{base: 'center', md:'left'}}>
                                 <Heading color = 'black'>Monday Mornings</Heading>
-                                <Text color = 'black'>10 - 10:45 A.M. </Text>
+                                <Text color = 'black'>10:00 A.M. - 10:45 A.M. </Text>
                                 <Heading color = 'black'>Soccer</Heading>
                                 <Text color = 'black'>(3 Weeks)</Text>
                                 <Text color = 'black'>October 6th - 20th</Text>
@@ -151,7 +151,7 @@ const Schedule = () => {
                         >
                             <VStack my = '20px' textAlign = {{base: 'center', md:'left'}}>
                                 <Heading color = 'black'>Monday Afternoon</Heading>
-                                <Text color = 'black'>4 - 4:45 P.M. </Text>
+                                <Text color = 'black'>4:00 P.M. - 4:45 P.M. </Text>
                                 <Heading color = 'black'>Soccer</Heading>
                                 <Text color = 'black'>(3 Weeks)</Text>
                                 <Text color = 'black'>October 6th - 20th</Text>
@@ -183,7 +183,7 @@ const Schedule = () => {
                         >
                             <VStack my = '20px' textAlign = {{base: 'center', md:'left'}}>
                                 <Heading color = 'black'>Tuesday Morning</Heading>
-                                <Text color = 'black'> 10 - 10:45 A.M. </Text>
+                                <Text color = 'black'> 10:00 A.M. - 10:45 A.M. </Text>
                                 <Heading color = 'black'>T - Ball</Heading>
                                 <Text color = 'black'>(3 Weeks)</Text>
                                 <Text color = 'black'>October 7th - 21th</Text>
