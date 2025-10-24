@@ -21,13 +21,24 @@ const HomePage = () => {
         >
             {/*Header Section */}
             <Box pt = '10px'>
-                <HStack justify = 'center' flexWrap = 'wrap'>
-                    <Heading fontWeight = 'bold' fontSize = {{base: '2xl', md: '3xl'}} color = {orange}>MINI</Heading>
-                    <Heading fontWeight = 'bold' fontSize = {{base: '2xl', md: '3xl'}} color = 'black'>SPORTS SKILLS</Heading>
+                <HStack justify = 'center'>
+                    <Heading
+                        fontWeight = 'bold'
+                        fontSize = '2xl'
+                        color = {orange}
+                    >
+                        MINI 
+                    </Heading>
+                    <Heading
+                        fontWeight = 'bold'
+                        fontSize = '2xl'
+                        color = 'black'
+                    >
+                        SPORTS SKILLS 
+                    </Heading>
                 </HStack>
+                <Navbar />
             </Box>
-
-            <Navbar />
 
             {/* Title and Picture */}
             <Box pb = {{base: '80px', md: '112px'}} as = 'section'>

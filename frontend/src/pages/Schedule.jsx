@@ -11,7 +11,7 @@ const Schedule = () => {
 
   return (
     <Flex
-        minH = '100vh' 
+        minH = '100%' 
         align = 'center' 
         justify = 'center'
         bgColor = {offWhite}
@@ -27,14 +27,14 @@ const Schedule = () => {
                 <HStack justify = 'center'> 
                     <Heading 
                         fontWeight = 'bold' 
-                        fontSize = '2xl' 
+                        fontSize = {{base: 'xl', md: '2xl'}} 
                         color = {orange}
                     >
                         MINI
                     </Heading>
                     <Heading 
                         fontWeight = 'bold' 
-                        fontSize = '2xl' 
+                        fontSize = {{base: 'xl', md: '2xl'}} 
                         color = 'black'
                     >
                         SPORTS SKILLS
@@ -44,23 +44,24 @@ const Schedule = () => {
             </Box>
             {/* Title and Image*/}
             
-            <Box pb = {{base: '80px', md: '112px'}} as = 'section'>
+            <Box pb = {{base: '60px', md: '100px'}} as = 'section'>
                 <Box  
                     bg = {offWhite} 
-                    pt = {{base: '60px', md: '90px'}}
-                    pb = {{base: '50px', md: '40px'}} 
-                    px = {{base: '16px', md: ' 300px'}}
+                    pt = {{base: '40px', md: '90px'}}
+                    pb = {{base: '40px', md: '60px'}} 
+                    px = {{base: '20px', md: ' 60px', lg: '300px'}}
                 >
                     <Flex
-                        direction = {{ base: 'column', md: 'row'}}
+                        direction = {{ base: 'column', md: 'column', xl: 'row'}}
                         justify = 'space-between'
                         align = 'center'
-                        mx = {{base: '24px', md: '200px'}}
-                        gap = {{base: '32px', md: '0'}}
+                        mx = 'auto'
+                        gap = {{base: 8, md: 16}}
+                        w = '100%'
                     >
                         <Image 
                             src = '..\images\pickleball.jpg'
-                            boxSize = {{base: '250px', md: '400px'}}
+                            boxSize = {{base: '250px', sm: '300px', md: '400px', lg: '450px'}}
                             borderRadius = '12px'
                             objectFit = 'cover'
                         />
@@ -68,10 +69,11 @@ const Schedule = () => {
                             align = {{ base: 'center', md: 'flex-start'}}
                             spacing = {2}
                             textAlign = {{base: 'center', md: 'left'}}
+                            pr = {{xl: '300px'}}
                         >
                             <Heading 
                                 fontWeight = '800' 
-                                fontSize = {{base: '32px', md: '48px'}} 
+                                fontSize = {{base: '28px', sm: '32px', md: '40px', lg: '48px'}}
                                 py = {{base: '5px', md: '10px'}} 
                                 color = 'black'
                             >
@@ -82,7 +84,7 @@ const Schedule = () => {
                                     px = '10px' 
                                     py = '5px' 
                                     fontWeight = '500' 
-                                    fontSize = {{base: '18px', md: '24px'}} 
+                                    fontSize = {{base: '16px', sm: '18px', md: '24px'}}
                                     color = {offWhite}
                                 >
                                     Physical Education
@@ -98,21 +100,24 @@ const Schedule = () => {
             <Flex justify = 'center' w = '100%'>
                 <Box
                     bg = {offWhite}
-                    w = '100vw'
+                    w = '100%'
                     display= 'flex'
                     justifyContent='center'
-                    mb = '50px'
+                    mb = {{base: '30px', md: '50px'}}
                 >
                     <HStack
-                        w = {{base: '100%', md: '70%'}}
-                        spacing = {{base: 4, md: 8}}
-                        justify = 'space-between'
+                        direction = 'row'
+                        flexWrap = 'wrap'
+                        w = {{base: '100%', md: '90%', lg: '70%'}}
+                        spacing = {{base: 4, md: 6, lg: 8}}
+                        justify = 'center'
+                        align = 'stretch'
                     >
                         <Box
                             bg = {blue}
                             borderRadius = '12px'
-                            h = {{base: 'auto', md: '500px'}}
-                            flex = '1'
+                            h = 'auto'
+                            flex = {{base: '1 1 100%', md: '1 1 30%'}}
                             display = 'flex'
                             alignItems = 'center'
                             justifyContent = 'center'
@@ -141,8 +146,8 @@ const Schedule = () => {
                         <Box
                             bg = {pink}
                             borderRadius = '12px'
-                            h = {{base: 'auto', md: '500px'}}
-                            flex = '1'
+                            h = 'auto'
+                            flex = {{base: '1 1 100%', md: '1 1 30%'}}
                             display = 'flex'
                             alignItems = 'center'
                             justifyContent = 'center'
@@ -171,8 +176,8 @@ const Schedule = () => {
                         <Box
                             bg = {orange}
                             borderRadius = '12px'
-                            h = {{base: 'auto', md: '500px'}}
-                            flex = '1'
+                            h = 'auto'
+                            flex = {{base: '1 1 100%', md: '1 1 30%'}}
                             display = 'flex'
                             alignItems = 'center'
                             justifyContent = 'center'
