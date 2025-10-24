@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
 
     const blue = '#afd6e6';
+    const offWhite = '#f7f5e7';
 
   return (
     <Box >
@@ -21,10 +22,54 @@ const Navbar = () => {
                 minW = '50%'
             >
                 <HStack justify = 'space-between' align = 'center' w = '100%'>
-                    <Text color = 'black'>Home</Text>
-                    <Text color = 'black'>About</Text>
-                    <Text color = 'black'>Pricing</Text>
-                    <Text color = 'black'>Schedule</Text>
+                    <Text 
+                        color = 'black' 
+                        as = {Link} to = '/' 
+                        _hover = {{
+                            px: '2px',  
+                            fontWeight: 'semibold', 
+                            bg: offWhite, borderRadius: 'full', 
+                            transform: 'scale(1.05)'
+                        }}
+                    >
+                        Home
+                    </Text>
+                    <Text 
+                        color = 'black' 
+                        as = {Link} to = 'about'
+                        _hover = {{ 
+                            px: '2px', 
+                            fontWeight: 'semibold', 
+                            bg: offWhite, borderRadius: 'full', 
+                            transform: 'scale(1.05)'
+                        }}
+                    >
+                        About
+                    </Text>
+                    <Text 
+                        color = 'black'
+                        as = {Link} to = 'about'
+                        _hover = {{ 
+                            px: '2px', 
+                            fontWeight: 'semibold', 
+                            bg: offWhite, borderRadius: 'full', 
+                            transform: 'scale(1.05)'
+                        }}
+                    >
+                        Pricing
+                    </Text>
+                    <Text 
+                        color = 'black'
+                        as = {Link} to = 'schedule'
+                        _hover = {{ 
+                            px: '2px', 
+                            fontWeight: 'semibold', 
+                            bg: offWhite, borderRadius: 'full', 
+                            transform: 'scale(1.05)'
+                        }}
+                    >
+                        Schedule
+                    </Text>
                 </HStack>
             </Box>
         </Flex>
