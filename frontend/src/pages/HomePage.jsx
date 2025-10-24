@@ -114,56 +114,99 @@ const HomePage = () => {
                 </Box>
             </Flex>
 
-            {/*Pricing card and Coach Profile Card*/}
-            <Flex 
-                bg = {offWhite} 
-                direction = {{base: 'column', md: 'row'}}
-                wrap = 'wrap'
-                justify = {{base: 'center', md: 'space-between'}}
-                align = 'flex-start'
-                paddingRight = '20px'
-                paddingLeft = '20px'
+            {/*Profile Section*/}
+            <Box
+                bg = {orange}
+                w = '100vw'
+                py = {{base: '40px', md: '80px'}}
+                px = {{base: '16px', md: '80px'}}
             >
-                {/*Pricing Card*/}
-                <Box 
-                    m = {{base: '20px', md: '40px'}}
-                    maxW = {{base: '90%', md: 'lg'}}
-                    w = '100%'
-                    bg = {offWhite} 
-                    shadow = 'md' 
-                    borderRadius = 'lg' 
-                    overflow = 'hidden'
+                <Flex
+                    justify = 'center'
+                    align = 'center'
+                    direction = {{base: 'column', md: 'row'}}
+                    gap = {{base: '20px', md: '0px'}}
+                    position = 'relative'
                 >
-                        <Heading fontWeight = '500' fontSize = {{base: '18px', md: '24px'}} color = 'black' margin = '20px' textAlign = 'center'>Pricing</Heading>
-                        <Text fontSize = {{base: '16px', md: '20px'}} color = 'black' margin = '10px'>3 week classes: $30</Text>
-                        <Text fontSize = {{base: '16px', md: '20px'}} color = 'black' margin = '10px'>4 week classes: $40</Text>
-                        <Image src = '..\images\Baseball Player.png' w = '100%' h = '400px' objectFit = 'cover' mx = 'auto' />
-                </Box>
-                {/*Coach Profile Card*/}
-                <Card.Root maxW = {{base: '90%', md: 'lg'}}  overflow= 'hidden' m = {{base: '20px', md: '40px'}} shadow = 'md' bg = '#f5d27c'>
-                    <Image src= '..\images\Janet.jpg' w = '100%' h = '400px' objectFit = 'cover' objectPosition='top'/>
-                    <Card.Body gap = '2'>
-                        <Card.Title color = 'black'>Janet Carbajal</Card.Title>
-                        <Card.Description color = 'black'>
-                            Meet Coach Janet, the ultimate fun-maker on the field! With her endless energy and big smile, Coach Janet helps young athletes discover just how exciting being active can be. 
-                            Whether it's trying something new for the first time or if you have some experience already, she makes every activity feel like an adventure.
-                        </Card.Description>
-                    </Card.Body>
-                    <Card.Footer gapt = '2'>
-                        <Button 
-                            bg  = '#5c92ac' 
-                            color = '#f4ebe2' 
-                            _hover ={{bg: '	#335584'}} 
-                            shadow={'sm'}
-                            onClick={handleButtonClick}
-                        >
-                            About Me
-                        </Button>
-                    </Card.Footer>
-                </Card.Root>
+                    <Box
+                        bg = {offWhite}
+                        borderRadius = '12px'
+                        p = '10px'
+                        zIndex = '2'
+                        boxShadow = 'md'
+                        flexShrink={0}
+                    >
+                        <Image 
+                            src = '..\images\Janet.jpg'
+                            w = {{ base: '200px', md: '400px'}}
+                            h = {{base: '200px', md: '400px'}}
+                            objectFit = 'cover'
+                            objectPosition = 'center'
+                            borderRadius = '8px'
+                        />
+                    </Box>
+                    <Box
+                        bg = {offWhite}
+                        borderRadius = '12px'
+                        p = {{base: '16px', md: '32px'}}
+                        maxW = {{base: '100%', md: '60%'}}
+                        position = 'relative'
+                        left = {{base: '0', md: '-40px'}}
+                        zIndex = '1'
+                        boxShadow = 'md'
+                        display = 'flex'
+                        alignItems = 'center'
+                        justifyContent= 'center'
+                    >
+                        <VStack>
+                            <Heading
+                                color = 'black'
+                            >
+                                Meet Coach Janet
+                            </Heading>
+                            <Text
+                                color = 'black'
+                                fontSize = {{base: '16px', md: '18px'}}
+                                lineHeight = '1.6'
+                                textAlign = 'left'
+                                maxW = {{base: '100%', md: '60%'}}
+                            >
+                                The ultimate fun-maker on the field! 
+                                With her endless energy and big smile, Coach Janet helps 
+                                young athletes discover just how exciting being active can be. 
+                                Whether it's trying something new for the first time or if you 
+                                have some experience already, she makes every activity feel like an adventure.
+                            </Text>
+                        </VStack>
+                    </Box>
+                </Flex>
+            </Box>
 
-            </Flex>
+            {/* Footer with Contact Information */}
+                {/* Spacer */}
+            <Box
+                bg = {offWhite}
+                h = {{base: '400px', md: '700px'}}
+                display = 'flex'
+                alignItems= 'center'
+                justifyContent = 'center'
+            >
+                <Image objectFit = 'contain' w = {{base: '90%', md: '60%'}} h = 'auto'  src = '..\images\kidsplayingsports.png' />
+            </Box>
 
+            {/*Contact */}
+            <Box bg = {pink} display = 'flex' justifyContent={'center'} p = '10px'>
+                <Flex>
+                    <VStack>
+                        <Heading color = 'black'>Contact</Heading>
+                        <HStack>
+                            <Text pb = '20px' color = 'black'>Email: Fitness2143@gmail.com</Text>
+                            <Text></Text>
+                        </HStack>
+
+                    </VStack>
+                </Flex>
+            </Box>
         </VStack>
     </Flex>
   )
