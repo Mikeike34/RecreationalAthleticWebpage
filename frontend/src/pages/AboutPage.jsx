@@ -23,21 +23,21 @@ const AboutPage = () => {
             spacing = {{base: 8, md: 16}}
         >
             {/*Header*/}
-            <Box pt = '10px'>
-                <HStack justify = 'center'>
-                    <Heading
-                        fontWeight = 'bold'
-                        fontSize = '2xl'
+           <Box pt = '10px' >
+                <HStack justify = 'center'> 
+                    <Heading 
+                        fontWeight = 'bold' 
+                        fontSize = {{base: 'xl', md: '2xl'}} 
                         color = {orange}
                     >
-                        MINI 
+                        MINI
                     </Heading>
-                    <Heading
-                        fontWeight = 'bold'
-                        fontSize = '2xl'
+                    <Heading 
+                        fontWeight = 'bold' 
+                        fontSize = {{base: 'xl', md: '2xl'}} 
                         color = 'black'
                     >
-                        SPORTS SKILLS 
+                        SPORTS SKILLS
                     </Heading>
                 </HStack>
                 <Navbar />

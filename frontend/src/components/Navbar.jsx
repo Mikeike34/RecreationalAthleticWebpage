@@ -31,6 +31,13 @@ const Navbar = () => {
                             bg: offWhite, borderRadius: 'full', 
                             transform: 'scale(1.05)'
                         }}
+                        _active = {{
+                            px: '2px',
+                            fontWeight: 'semibold',
+                            bg: offWhite, borderRadius: 'full',
+                            transform: 'scale(1.05)'
+                        }}
+                        transition = 'all 0.5'
                     >
                         Home
                     </Text>
@@ -43,6 +50,13 @@ const Navbar = () => {
                             bg: offWhite, borderRadius: 'full', 
                             transform: 'scale(1.05)'
                         }}
+                        _active = {{
+                            px: '2px',
+                            fontWeight: 'semibold',
+                            bg: offWhite, borderRadius: 'full',
+                            transform: 'scale(1.05)'
+                        }}
+                        transition = 'all 0.5'
                     >
                         About
                     </Text>
@@ -55,6 +69,13 @@ const Navbar = () => {
                             bg: offWhite, borderRadius: 'full', 
                             transform: 'scale(1.05)'
                         }}
+                        _active = {{
+                            px: '2px',
+                            fontWeight: 'semibold',
+                            bg: offWhite, borderRadius: 'full',
+                            transform: 'scale(1.05)'
+                        }}
+                        transition = 'all 0.5'
                     >
                         Pricing
                     </Text>
@@ -67,6 +88,13 @@ const Navbar = () => {
                             bg: offWhite, borderRadius: 'full', 
                             transform: 'scale(1.05)'
                         }}
+                        _active = {{
+                            px: '2px',
+                            fontWeight: 'semibold',
+                            bg: offWhite, borderRadius: 'full',
+                            transform: 'scale(1.05)'
+                        }}
+                        transition = 'all 0.5'
                     >
                         Schedule
                     </Text>
