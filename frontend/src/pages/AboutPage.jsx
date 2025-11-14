@@ -45,13 +45,13 @@ const AboutPage = () => {
 
             {/*About*/}
             <Flex 
-                direction = {{base: 'column', xl: 'row'}}
+                direction = {{base: 'column'}}
                 gap = {{base: 6, md: 8, lg: 12}}
                 justify = 'center'
                 align = 'center'
                 w = '100%'
-                px = {{base: 4, md: 10, xl: 20}}
-                py = {{base: 8, md: 12, xl: 16}}
+                px = {{base: 4, md: 10}}
+                py = {{base: 8, md: 12}}
             >
                 <Box
                     bg = {pink}
@@ -72,7 +72,7 @@ const AboutPage = () => {
                     py = '10px'
                     borderRadius = '12px'
                     overflow = 'hidden'
-                    order = {{base: '3', xl: '2'}}
+                    order = {{base: '3', xl: '3'}}
                 >
                     <Image 
                         src = '\running.jpg'
@@ -84,9 +84,9 @@ const AboutPage = () => {
 
                 <Box 
                     bg = {blue}
-                    p = {{base: 4, md: 6, xl: 8}}
+                    p = {{base: 4, md: 6}}
                     borderRadius = '12px'
-                    flex = {{lg: 2}}
+                    w = {{lg: '50%'}}
                     order = {{base: 2, lg: 2}}
                     textAlign = {{base: 'center', lg: 'left'}}
                 >
